@@ -16,3 +16,22 @@ transform:
     md5: 7cc64748edb9e34796990469bb7361a6.dir
     size: 395732
     nfiles: 1
+explore:
+  cmd: python src/Explore.py data/output/geolocated_rest.csv
+  deps:
+  - path: data/output
+    md5: 7cc64748edb9e34796990469bb7361a6.dir
+    size: 395732
+    nfiles: 1
+  - path: src/Explore.py
+    md5: 4bad1eff9a89817321b2a13aa602dcf9
+    size: 2083
+  outs:
+  - path: data/figures
+    md5: cf46339175e0ffd08ff301d7be79408e.dir
+    size: 23267
+    nfiles: 1
+  - path: data/statistics
+    md5: 6965d07420352959378292888cc0be7e.dir
+    size: 276
+    nfiles: 1

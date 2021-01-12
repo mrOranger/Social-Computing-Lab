@@ -8,3 +8,11 @@ stages:
     - transform.column_sort_index
     outs:
     - data/output/
+  explore:
+    cmd: python src/Explore.py data/output/geolocated_rest.csv
+    deps:
+    - data/output
+    - src/Explore.py
+    outs:
+    - data/figures
+    - data/statistics
