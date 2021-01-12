@@ -88,3 +88,34 @@ detailed_evaluate:
     md5: d47aa75f31278f18004d847492fd5838.dir
     size: 32703
     nfiles: 1
+iterate:
+  cmd: python src/Iterate.py violations_plus.csv geolocated_rest.csv
+  deps:
+  - path: data/SFFoodProgram_Complete_Data
+    md5: 94b516621979c4f25111e2971f7499a5.dir
+    size: 6929109
+    nfiles: 3
+  - path: data/output
+    md5: 7cc64748edb9e34796990469bb7361a6.dir
+    size: 395732
+    nfiles: 1
+  - path: src/Iterate.py
+    md5: f4b911f4bc76e1e0115dff7b1044b77b
+    size: 3120
+  outs:
+  - path: data/top_offenses
+    md5: db2fe2a90931c34b903efb7f2bf552be.dir
+    size: 3056
+    nfiles: 1
+  - path: data/violation_hist
+    md5: 2ea3a21428c7cb5077b506602e5c7daa.dir
+    size: 74666
+    nfiles: 1
+  - path: data/violation_hist_perfect
+    md5: 6fcf60feb6e0d16e9fb826e89606e8d7.dir
+    size: 36674
+    nfiles: 1
+  - path: data/violations_scores
+    md5: 40212f2d2286eec84d181db8a67dbcc5.dir
+    size: 95006
+    nfiles: 1

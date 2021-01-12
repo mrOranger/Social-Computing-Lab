@@ -39,3 +39,14 @@ stages:
     - src/Detailed_evaluate.py
     outs:
     - data/det_evaluate
+  iterate:
+    cmd: python src/Iterate.py violations_plus.csv geolocated_rest.csv
+    deps:
+    - data/SFFoodProgram_Complete_Data
+    - data/output
+    - src/Iterate.py
+    outs:
+    - data/top_offenses
+    - data/violation_hist
+    - data/violation_hist_perfect
+    - data/violations_scores

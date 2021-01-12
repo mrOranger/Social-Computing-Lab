@@ -6,3 +6,7 @@
 /discrete
 /evaluate
 /det_evaluate
+/violation_hist
+/violation_hist_perfect
+/top_offenses
+/violations_scores
