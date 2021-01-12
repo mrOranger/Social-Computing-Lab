@@ -1,0 +1,10 @@
+stages:
+  transform:
+    cmd: python src/Transform.py businesses.csv inspections.csv
+    deps:
+    - data/SFBusinesses
+    - src/Transform.py
+    params:
+    - transform.column_sort_index
+    outs:
+    - data/output/

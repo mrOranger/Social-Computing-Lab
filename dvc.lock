@@ -1,0 +1,18 @@
+transform:
+  cmd: python src/Transform.py businesses.csv inspections.csv
+  deps:
+  - path: data/SFBusinesses
+    md5: 43b856c21772fb98c8d4459142d07fcb.dir
+    size: 8615824
+    nfiles: 6
+  - path: src/Transform.py
+    md5: 4963e190d48f64b7d7da7da2e87406b7
+    size: 2329
+  params:
+    params.yaml:
+      transform.column_sort_index: date
+  outs:
+  - path: data/output/
+    md5: 7cc64748edb9e34796990469bb7361a6.dir
+    size: 395732
+    nfiles: 1
