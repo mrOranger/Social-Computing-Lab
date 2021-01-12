@@ -23,7 +23,7 @@ source venv/bin/activate
 python -m pip install --upgrade pip
 ```
 
-5. Install the dependencies usign pip:
+5. Install the dependencies using pip:
 ```
 pip install -r src/requirements.txt
 ```
