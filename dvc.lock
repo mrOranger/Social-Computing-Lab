@@ -69,3 +69,22 @@ evaluate:
     md5: 29de62b21215d4d5881c6aa691a079d6.dir
     size: 49123
     nfiles: 1
+detailed_evaluate:
+  cmd: python src/Detailed_evaluate.py geolocated_rest.csv most_recent_inspections_statistics.json
+  deps:
+  - path: data/output
+    md5: 7cc64748edb9e34796990469bb7361a6.dir
+    size: 395732
+    nfiles: 1
+  - path: data/statistics
+    md5: 6965d07420352959378292888cc0be7e.dir
+    size: 276
+    nfiles: 1
+  - path: src/Detailed_evaluate.py
+    md5: 8240b7e53414143433e84131f118ecea
+    size: 2257
+  outs:
+  - path: data/det_evaluate
+    md5: d47aa75f31278f18004d847492fd5838.dir
+    size: 32703
+    nfiles: 1

@@ -31,3 +31,11 @@ stages:
     - src/Evaluate.py
     outs:
     - data/evaluate
+  detailed_evaluate:
+    cmd: python src/Detailed_evaluate.py geolocated_rest.csv most_recent_inspections_statistics.json
+    deps:
+    - data/output
+    - data/statistics
+    - src/Detailed_evaluate.py
+    outs:
+    - data/det_evaluate
