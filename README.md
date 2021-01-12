@@ -18,7 +18,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-4. (Optinal) Update pip package installer:
+4. (Optional) Update pip package installer:
 ```
 python -m pip install --upgrade pip
 ```
