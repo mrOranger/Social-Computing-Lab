@@ -35,3 +35,18 @@ explore:
     md5: 6965d07420352959378292888cc0be7e.dir
     size: 276
     nfiles: 1
+discretize:
+  cmd: python src/Discretize.py geolocated_rest.csv
+  deps:
+  - path: data/output
+    md5: 7cc64748edb9e34796990469bb7361a6.dir
+    size: 395732
+    nfiles: 1
+  - path: src/Discretize.py
+    md5: 51a912e3129eb8f4810cfac1d307408f
+    size: 1429
+  outs:
+  - path: data/discrete
+    md5: 1d2253ffc8d6f124e70b32e3d598bd52.dir
+    size: 420825
+    nfiles: 1

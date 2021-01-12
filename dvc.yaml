@@ -16,3 +16,10 @@ stages:
     outs:
     - data/figures
     - data/statistics
+  discretize:
+    cmd: python src/Discretize.py geolocated_rest.csv
+    deps:
+    - data/output
+    - src/Discretize.py
+    outs:
+    - data/discrete
