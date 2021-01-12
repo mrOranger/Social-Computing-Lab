@@ -50,3 +50,22 @@ discretize:
     md5: 1d2253ffc8d6f124e70b32e3d598bd52.dir
     size: 420825
     nfiles: 1
+evaluate:
+  cmd: python src/Evaluate.py geolocated_rest.csv geolocated_rest_discretized.csv
+  deps:
+  - path: data/discrete
+    md5: 1d2253ffc8d6f124e70b32e3d598bd52.dir
+    size: 420825
+    nfiles: 1
+  - path: data/output
+    md5: 7cc64748edb9e34796990469bb7361a6.dir
+    size: 395732
+    nfiles: 1
+  - path: src/Evaluate.py
+    md5: 52d2c4b143f0bd5f1fc60d0c1172bb0c
+    size: 2036
+  outs:
+  - path: data/evaluate
+    md5: 29de62b21215d4d5881c6aa691a079d6.dir
+    size: 49123
+    nfiles: 1

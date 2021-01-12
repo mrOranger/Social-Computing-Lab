@@ -23,3 +23,11 @@ stages:
     - src/Discretize.py
     outs:
     - data/discrete
+  evaluate:
+    cmd: python src/Evaluate.py geolocated_rest.csv geolocated_rest_discretized.csv
+    deps:
+    - data/discrete
+    - data/output
+    - src/Evaluate.py
+    outs:
+    - data/evaluate
