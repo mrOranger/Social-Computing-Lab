@@ -14,14 +14,14 @@ The aim of this stage is to extract the statistical values from the provious dat
 ### 3. Discretize
 In this step we are going to calculate the needed information to evaluate our solution and hypothesis. Indeed, we are assigning discrete values of numerical scores of the dataset of inspections.
 
-## 4. Evaluate
+### 4. Evaluate
 Using the previous metrics we can drawn some conclusions from our analysis, and from this first analysis we can conclude that most of the restaurants are evauated as __adequate__ and __good__ 
 
-## 5. Detailed evaluate
+### 5. Detailed evaluate
 Using the previous statistical indicators computed in the stage 2, we can drawn a more detailed evaluation of our analysis.
 
-## 6. Iterate
-This last step is aimed to analyze if there is or not a correlation between the score of each restaurant and the healts' violations.
+### 6. Iterate
+This last step is aimed to analyze if there is or not a correlation between the score of each restaurant and the health violations.
 
 ## Setup
 1. Download the repository and move to the folder:
