@@ -68,6 +68,9 @@ dvc repro --force
 
 By using the command:
 ```
-dvg dag
+dvc dag
 ```
 we can see the how the pipeline is distributed: ![alt text](DAG.png)
+
+### Notes
+The following assignment has been developed by using __Python 3.8.5__ and __Debian 10__.
